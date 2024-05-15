@@ -192,7 +192,7 @@ class LowVoltageSmartElectricEnergyMeter(EchonetInstance):
         # 0xED: _0288ED, #"Day for which the historical data of measured cumulative amounts of electric energy is to be retrieved 2"
     }
 
-    def __init__(self, host, api_connector, instance=0x1):
+    def __init__(self, host, api_connector=None, instance=0x1):
         self._eojgc = 0x02
         self._eojcc = 0x88
         EchonetInstance.__init__(
