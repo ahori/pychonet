@@ -1324,6 +1324,7 @@ EPC_CODE = {
     0x05: {  # Management/control-related device class group
         0xFD: {  # Switch (supporting JEM-A/HA terminals) class
             0x80: "Operation status",
+            0x84: "Power",
             0xE0: "Connected device",
         },
         0xFF: {  # Controller class
